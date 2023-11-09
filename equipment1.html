@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+ 	<head>
+ 		<!-- Meta Tags -->
+		<meta charset="UTF-8">
+		<meta name="author" content="Kamran Mubarik">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Title -->
+ 		<title>E-Commerce Online Shop</title>
+ 		<!-- Style Sheet -->
+		<link rel="stylesheet" type="text/css" href="./assets/css/equipment1.css" />
+		<!-- Javascript -->	
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<!-- FancyBox -->
+		<link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+
+		<!-- Optionally add helpers - button, thumbnail and/or media -->
+		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
+
+		<link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
+		<script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+		<script>
+		$(document).ready(function(){		
+			$('.fancybox').fancybox({
+				openEffect  : 'none',
+				closeEffect : 'none',
+
+				prevEffect : 'none',
+				nextEffect : 'none',
+
+				closeBtn  : false,
+
+				helpers : {
+					title : {
+						type : 'inside'
+					},
+					buttons	: {}
+				},
+
+				afterLoad : function() {
+					this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
+				}
+			});
+		});
+
+  		</script>
+ 	</head>
+<body>
+
+	<header>
+		<div class="container">
+			<div class="brand">
+				<div class="logo">
+					<a href="index.html">
+					</a>
+				</div> <!-- logo -->
+				<div class="shop-icon">
+					<div class="dropdown">
+						
+					</div>
+				</div> <!-- shop icons -->
+			</div> <!-- brand -->
+
+			</div> <!-- menu -->
+		</div> <!-- container -->
+	</header> <!-- header -->
+
+	<div class="container">
+		<main>
+			<div class="breadcrumb">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li> / </li>
+					<li><a href="">Shop</a></li>
+					<li> / </li>
+					<li><a href="">Product</a></li>
+				</ul>
+			</div> <!-- End of Breadcrumb-->
+            <div class="container">
+                <div class="row g-2">
+                  <div class="col-6">
+                    <div class="p-3 border bg-light">
+                        <div class="single-product">
+                            <div class="images-section">
+                                <div class="larg-img">
+                                    <video width="350" height="350" controls>
+                                        <source src="./assets/video/video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div> <!-- End of Images Section-->
+            
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="p-3 border bg-light">
+                        <div class="product-detail">
+                            <div class="product-name">
+                                <h2>Product Name</h2>
+                            </div>
+                            <div class="product-price">
+                                <h3>Rs.4,500/-</h3>
+                            </div>
+                            <hr>
+                            <div class="product-description">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in leo leo. Donec aliquet mauris ac consequat ornare. Pellentesque eget leo tempor, venenatis mauris sed, viverra ante. Donec tincidunt mauris vel tincidunt ultricies. Sed sed libero hendrerit elit gravida vulputate.</p>
+                            </div>
+                            <hr>
+                            <div class="product-cart">
+                                <form id="cart-form">
+                                    <div class="form-group">
+                                        <input type="number" class="cart-number" name="cartNumber" value="1" min="1" max="10">
+                                        <input type="submit" name="addToCart" value="Add To Cart">
+                                    </div>
+                                </form>
+                               <!-- <form id="wishlist-form">
+                                    <div class="form-group">
+                                        <input type="checkbox" class="wishlist" name="wishlist"> Add To Wishlist
+                                    </div>
+                                </form>-->
+                            </div>
+                            <hr>
+                            <div class="product-meta">
+                                <p><b>Category: </b> Product</p>
+                                <p><b>Share This Product: </b> Facebook, Twitter</p>
+                            </div>
+                        </div> <!-- End of Product Detail-->
+                    </div>
+                    <hr>
+                    <div class="product-long-description">
+                        <h3>Product Description</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in leo leo. Donec aliquet mauris ac consequat ornare. Pellentesque eget leo tempor, venenatis mauris sed, viverra ante. Donec tincidunt mauris vel tincidunt ultricies. Sed sed libero hendrerit elit gravida vulputate. 
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean in leo leo. Donec aliquet mauris ac consequat ornare. Pellentesque eget leo tempor, venenatis mauris sed, viverra ante. Donec tincidunt mauris vel tincidunt ultricies. Sed sed libero hendrerit elit gravida vulputate. 
+                        </p>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+			
+				
+			<hr>
+			
+			</div> <!-- Recommend Product Section -->
+		</main> <!-- Main Area -->
+	</div>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer" id="footer">
+
+    <div class="footer-bottom">
+    </div>
+
+  </footer>
+
+</body>
+
+</html>
