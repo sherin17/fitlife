@@ -2,11 +2,11 @@
 <html lang="en">
 
 <head>
-    <!-- Meta Tags -->
-    <meta charset="UTF-8">
-    <meta name="author" content="Kamran Mubarik">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta name="author" content="Kamran Mubarik">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 
     - favicon
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
@@ -16,7 +16,7 @@
   -->
   <link rel="stylesheet" href="./assets/css/style.css">
 
-     <!-- 
+  <!-- 
     - google font link
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -34,501 +34,501 @@
   <link rel="preload" as="image" href="./assets/images/heart-rate.svg">
   <link rel="preload" as="image" href="./assets/images/calories.svg">
 
-    <!-- FancyBox -->
-    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
-    <script>
-        $(document).ready(function () {
-            $('.fancybox').fancybox({
-                openEffect: 'none',
-                closeEffect: 'none',
+  <!-- FancyBox -->
+  <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
+  <script>
+    $(document).ready(function () {
+      $('.fancybox').fancybox({
+        openEffect: 'none',
+        closeEffect: 'none',
 
-                prevEffect: 'none',
-                nextEffect: 'none',
+        prevEffect: 'none',
+        nextEffect: 'none',
 
-                closeBtn: false,
+        closeBtn: false,
 
-                helpers: {
-                    title: {
-                        type: 'inside'
-                    },
-                    buttons: {}
-                },
+        helpers: {
+          title: {
+            type: 'inside'
+          },
+          buttons: {}
+        },
 
-                afterLoad: function () {
-                    this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
-                }
-            });
-        });
-
-    </script>
-    <style>
-        /* Global styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
+        afterLoad: function () {
+          this.title = 'Image ' + (this.index + 1) + ' of ' + this.group.length + (this.title ? ' - ' + this.title : '');
         }
+      });
+    });
 
-        /* Responsive styles */
-        @media screen and (max-width: 768px) {
+  </script>
+  <style>
+    /* Global styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
 
-            /* Styles for handheld devices (e.g., smartphones) */
-            .container {
-                padding: 10px;
-            }
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
 
-            /* Adjust font sizes, margins, and other styles for smaller screens */
-        }
+      /* Styles for handheld devices (e.g., smartphones) */
+      .container {
+        padding: 10px;
+      }
 
-        @media screen and (min-width: 769px) and (max-width: 1024px) {
+      /* Adjust font sizes, margins, and other styles for smaller screens */
+    }
 
-            /* Styles for tablets (e.g., iPad) */
-            .container {
-                max-width: 768px;
-                margin: 0 auto;
-                padding: 20px;
-            }
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
 
-            /* Adjust the layout or fonts for tablet-sized screens */
-        }
+      /* Styles for tablets (e.g., iPad) */
+      .container {
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 20px;
+      }
 
-        @media screen and (min-width: 1025px) {
+      /* Adjust the layout or fonts for tablet-sized screens */
+    }
 
-            /* Styles for desktop screens */
-            .container {
-                max-width: 1200px;
-                margin: 0 auto;
-                padding: 30px;
-            }
+    @media screen and (min-width: 1025px) {
 
-            /* You can optimize the layout and use larger fonts for desktops */
-        }
+      /* Styles for desktop screens */
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 30px;
+      }
 
-        /* Additional responsive styles can be added as needed */
-    </style>
+      /* You can optimize the layout and use larger fonts for desktops */
+    }
+
+    /* Additional responsive styles can be added as needed */
+  </style>
 </head>
 
 <body style="background-color: #a5a1a1;">
-    <!-- 
+  <!-- 
     - #HEADER
   -->
 
-    <header class="header" data-header>
-        <div class="container">
+  <header class="header" data-header>
+    <div class="container">
 
-            <a href="#" class="logo">
-                <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
+      <a href="#" class="logo">
+        <ion-icon name="barbell-sharp" aria-hidden="true"></ion-icon>
 
-                <span class="span">Get-Fit</span>
-            </a>
+        <span class="span">Get-Fit</span>
+      </a>
 
-            <nav class="navbar" data-navbar>
+      <nav class="navbar" data-navbar>
 
-                <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
-                    <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
-                </button>
+        <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-sharp" aria-hidden="true"></ion-icon>
+        </button>
 
-                <ul class="navbar-list">
+        <ul class="navbar-list">
 
-                    <li>
-                        <a href="/index.html" class="navbar-link active" data-nav-link>Home</a>
-                    </li>
+          <li>
+            <a href="/index.html" class="navbar-link active" data-nav-link>Home</a>
+          </li>
 
-                    <li>
-                        <a href="#about" class="navbar-link" data-nav-link>Cart</a>
-                    </li>
-                    <li>
-                        <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
-                      </li>
-                </ul>
+          <li>
+            <a href="#about" class="navbar-link" data-nav-link>Cart</a>
+          </li>
+          <li>
+            <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
+          </li>
+        </ul>
 
-            </nav>
+      </nav>
 
 
-            <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
-                <span class="line"></span>
-                <span class="line"></span>
-                <span class="line"></span>
-            </button>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line"></span>
+        <span class="line"></span>
+        <span class="line"></span>
+      </button>
 
-        </div>
-    </header>
+    </div>
+  </header>
 
 
-    <section class="section blog" id="blog" aria-label="blog">
-        <div class="container">
+  <section class="section blog" id="blog" aria-label="blog">
+    <div class="container">
 
-            <p class="section-subtitle">Equipments</p>
+      <p class="section-subtitle">Equipments</p>
 
-            <h2 class="h2 section-title text-center">Make your best choice</h2>
+      <h2 class="h2 section-title text-center">Make your best choice</h2>
 
-            <ul class="blog-list has-scrollbar">
+      <ul class="blog-list has-scrollbar">
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/005.jpg" width="440" height="270" loading="lazy"
-                                alt="Going to the gym for the first time" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/005.jpg" width="440" height="270" loading="lazy"
+                alt="Going to the gym for the first time" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$200</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$200</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">Threadmill</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">Threadmill</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="/Shopping.html" class="btn-link has-before">Read More</a>
+              <a href="/Shopping.html" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/006.jpg" width="440" height="270" loading="lazy"
-                                alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/006.jpg" width="440" height="270" loading="lazy"
+                alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$800</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$800</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">Cultsport smartRow cabo, Max Weight:110kg</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">Cultsport smartRow cabo, Max Weight:110kg</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/007.jpg" width="440" height="270" loading="lazy"
-                                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/007.jpg" width="440" height="270" loading="lazy"
+                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$450</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$450</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">Slovic Yellow Resistance Bands For Workout for Men and
-                                    Women</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">Slovic Yellow Resistance Bands For Workout for Men and
+                  Women</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/008.jpg" width="440" height="270" loading="lazy"
-                                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/008.jpg" width="440" height="270" loading="lazy"
+                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$780</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$780</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">Cultsport Adjustable Barbell 20kg Including Multi-Grip
-                                    Rubber Weight Plates for Men and Women with free Personal Dietician for home gym
-                                    Workout</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">Cultsport Adjustable Barbell 20kg Including Multi-Grip
+                  Rubber Weight Plates for Men and Women with free Personal Dietician for home gym
+                  Workout</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/009.jpg" width="440" height="270" loading="lazy"
-                                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/009.jpg" width="440" height="270" loading="lazy"
+                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$490</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$490</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">Kore PVC DM-PVC-1KG-COMBO161 FIXED Dumbbell Set, 1Kg</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">Kore PVC DM-PVC-1KG-COMBO161 FIXED Dumbbell Set, 1Kg</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/010.jpg" width="440" height="270" loading="lazy"
-                                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/010.jpg" width="440" height="270" loading="lazy"
+                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$1200</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$1200</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">Chest Commerial Adidas Performance Power Tower</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">Chest Commerial Adidas Performance Power Tower</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/011.jpg" width="440" height="270" loading="lazy"
-                                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/011.jpg" width="440" height="270" loading="lazy"
+                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$1800</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$1800</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">Poweder Coat Kettlebell </a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">Poweder Coat Kettlebell </a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/001.jpg" width="440" height="270" loading="lazy"
-                                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/001.jpg" width="440" height="270" loading="lazy"
+                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$1250</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$1250</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">Stainless Stell Hammer Rowing Machine</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">Stainless Stell Hammer Rowing Machine</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/002.jpg" width="440" height="270" loading="lazy"
-                                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/002.jpg" width="440" height="270" loading="lazy"
+                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$125</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$125</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">Indoor Cycling Bike Stationary Bike</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">Indoor Cycling Bike Stationary Bike</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/002.jpg" width="440" height="270" loading="lazy"
-                                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/002.jpg" width="440" height="270" loading="lazy"
+                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$800</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$800</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">steel bolts fit adjustable ab bench</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">steel bolts fit adjustable ab bench</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/003.jpg.png" width="440" height="270" loading="lazy"
-                                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/003.jpg.png" width="440" height="270" loading="lazy"
+                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$890</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$890</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">York Barbell St Low Row</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">York Barbell St Low Row</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
 
-                <li class="scrollbar-item">
-                    <div class="blog-card">
+        <li class="scrollbar-item">
+          <div class="blog-card">
 
-                        <div class="card-banner img-holder" style="--width: 440; --height: 270;">
-                            <img src="./assets/images/004.jpg" width="440" height="270" loading="lazy"
-                                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+            <div class="card-banner img-holder" style="--width: 440; --height: 270;">
+              <img src="./assets/images/004.jpg" width="440" height="270" loading="lazy"
+                alt="Risus purus namien parturient accumsan cacus" class="img-cover">
 
-                            <time class="card-meta" datetime="2022-07-07">$2500</time>
-                        </div>
+              <time class="card-meta" datetime="2022-07-07">$2500</time>
+            </div>
 
-                        <div class="card-content">
+            <div class="card-content">
 
-                            <h3 class="h3">
-                                <a href="#" class="card-title">Risus purus namien parturient accumsan cacus</a>
-                            </h3>
+              <h3 class="h3">
+                <a href="#" class="card-title">Risus purus namien parturient accumsan cacus</a>
+              </h3>
 
-                            <p class="card-text">
-                                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
-                                hac
-                                habitasse platea dictumst.
-                            </p>
+              <p class="card-text">
+                Praesent id ipsum pellentesque lectus dapibus condimentum curabitur eget risus quam. In
+                hac
+                habitasse platea dictumst.
+              </p>
 
-                            <a href="#" class="btn-link has-before">Read More</a>
+              <a href="#" class="btn-link has-before">Read More</a>
 
-                        </div>
+            </div>
 
-                    </div>
-                </li>
+          </div>
+        </li>
 
-            </ul>
+      </ul>
 
-        </div>
-    </section>
+    </div>
+  </section>
 
-      <!-- 
+  <!-- 
     - #FOOTER
   -->
 
@@ -712,7 +712,7 @@
     </div>
 
   </footer>
-    <!-- 
+  <!-- 
     - #BACK TO TOP
   -->
 
@@ -731,10 +731,6 @@
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-
-
-
 </body>
 
 </html>
