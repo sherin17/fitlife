@@ -1,19 +1,28 @@
 let cartItems = [];
 let totalPrice = 0;
 
-function addToCart() {
-    const itemName = "Threadmill";
-    const itemPrice = 800;
+// Array of products
+const products = [
+    { name: "Threadmill", price: 800 },
+    { name: "Dumbbells", price: 50 },
+    { name: "Yoga Mat", price: 20 },
+    // Add more products as needed
+];
 
-    const item = {
-        name: itemName,
-        price: itemPrice,
-    };
+function addToCart(productIndex) {
+    const selectedProduct = products[productIndex];
 
-    cartItems.push(item);
-    totalPrice += itemPrice;
+    if (selectedProduct) {
+        const item = {
+            name: selectedProduct.name,
+            price: selectedProduct.price,
+        };
 
-    updateCart();
+        cartItems.push(item);
+        totalPrice += selectedProduct.price;
+
+        updateCart();
+    }
 }
 
 function updateCart() {
@@ -30,5 +39,5 @@ function updateCart() {
         cartList.appendChild(listItem);
     });
 
-    
+    totalElement.innerText = totalPrice.toFixed(2);
 }
