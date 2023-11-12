@@ -4,8 +4,11 @@ let totalPrice = 0;
 // Array of products
 const products = [
     { name: "Threadmill", price: 800 },
-    { name: "Dumbbells", price: 50 },
-    { name: "Yoga Mat", price: 20 },
+    { name: "Cultsport smartRow cabo, Max Weight:110kg", price: 500 },
+    { name: "Slovic Yellow Resistance Bands", price: 450 },
+    { name: "Cultsport Adjustable Barbell 20kg", price: 780 },
+    { name: "Kore PVC DM-PVC-1KG-COMBO161 FIXED Dumbbell Set, 1Kg", price: 490 },
+    { name: "Chest Commerial Adidas Performance Power Tower", price: 1200 },
     // Add more products as needed
 ];
 
