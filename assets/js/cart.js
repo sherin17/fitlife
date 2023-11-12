@@ -37,7 +37,7 @@ function updateCart() {
     cartItems.forEach(item => {
         const listItem = document.createElement("li");
         listItem.innerHTML = `
-        <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+        <img src="${item.image}" alt="${item.name}" class="cart-item-image" width="50px" height="50px">
             <span>${item.name}</span>
             <span>$${item.price.toFixed(2)}</span>
         `;
