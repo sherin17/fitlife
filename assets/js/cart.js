@@ -3,8 +3,8 @@ let totalPrice = 0;
 
 // Array of products
 const products = [
-    { name: "Threadmill", price: 800 },
-    { name: "Cultsport smartRow cabo, Max Weight:110kg", price: 500 },
+    { name: "Threadmill", price: 800, image:"./assets/images/005.jpg"},
+    { name: "Cultsport smartRow cabo, Max Weight:110kg", price: 500, image:"./assets/images/005.jpg" },
     { name: "Slovic Yellow Resistance Bands", price: 450 },
     { name: "Cultsport Adjustable Barbell 20kg", price: 780 },
     { name: "Kore PVC DM-PVC-1KG-COMBO161 FIXED Dumbbell Set, 1Kg", price: 490 },
@@ -19,6 +19,7 @@ function addToCart(productIndex) {
         const item = {
             name: selectedProduct.name,
             price: selectedProduct.price,
+            image: selectedProduct.image
         };
 
         cartItems.push(item);

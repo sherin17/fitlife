@@ -2,32 +2,24 @@
 <html lang="en">
 
 <head>
-    <!-- Meta Tags -->
     <meta charset="UTF-8">
     <meta name="author" content="Kamran Mubarik">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Style Sheet -->
     <link rel="stylesheet" type="text/css" href="./assets/css/equipments.css" />
-    <!-- Javascript -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/cart.css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <!-- FancyBox -->
     <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
     <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
-
-    <!-- Optionally add helpers - button, thumbnail and/or media -->
     <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
-
     <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
     <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
 </head>
 
 <body>
 
-    <!-- header -->
-    <header>
-    </header>
     <header>
     </header>
 
@@ -39,29 +31,81 @@
                     <li> / </li>
                     <li><a href="Shopping.html">Shop</a></li>
                     <li> / </li>
-                    <li><a href="#">Product</a></li>
+                    <li><a href="#">Favourites</a></li>
                 </ul>
-            </div> <!-- End of Breadcrumb-->
-    <div class="container">
-        <div class="cart">
-            <h2>Shopping Cart</h2>
-            <ul id="cartItems"></ul>
-        </div>
+            </div>
+            <div class="card-container">
+                <div class="card">
+                    <img src="./assets/images/005.jpg" loading="lazy" alt="Going to the gym for the first time">
+                    <time class="card-meta" datetime="2022-07-07">$600</time>
+                    <h3 class="h3">
+                        <a href="equipment1.html" class="card-title">Threadmill</a>
+                    </h3>
+                    <button onclick="addToCart(0)">Add to Favourites</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/006.jpg" width="440" height="270" loading="lazy"
+                        alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
+                    <time class="card-meta" datetime="2022-07-07">$500</time>
+                    <h3 class="h3">
+                        <a href="equipment2.html" class="card-title"> Cultsport smartRow cabo, Max
+                            Weight:110kg</a>
+                    </h3>
+                    <button onclick="addToCart(1)">Add to Favourites</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/007.jpg" width="440" height="270" loading="lazy"
+                        alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+                    <time class="card-meta" datetime="2022-07-07">$450</time>
+                    <h3 class="h3">
+                        <a href="equipment3.html" class="card-title">Slovic Yellow Resistance Bands</a>
+                    </h3>
+                    <button onclick="addToCart(2)">Add to Favourites</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/008.jpg" width="440" height="270" loading="lazy"
+                        alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+                    <time class="card-meta" datetime="2022-07-07">$780</time>
+                    <h3 class="h3">
+                        <a href="equipment4.html" class="card-title">Cultsport Adjustable Barbell 20kg</a>
+                    </h3>
+                    <button onclick="addToCart(3)">Add to Favourites</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/009.jpg" width="440" height="270" loading="lazy"
+                        alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+                    <time class="card-meta" datetime="2022-07-07">$490</time>
+                    <h3 class="h3">
+                        <a href="equipment5.html" class="card-title">Kore PVC DM-PVC-1KG-COMBO161 FIXED Dumbbell
+                            Set, 1Kg</a>
+                    </h3>
+                    <button onclick="addToCart(4)">Add to Favourites</button>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/010.jpg" width="440" height="270" loading="lazy"
+                        alt="Risus purus namien parturient accumsan cacus" class="img-cover">
+                    <time class="card-meta" datetime="2022-07-07">$1200</time>
+                    <h3 class="h3">
+                        <a href="equipment6.html" class="card-title">Chest Commerial Adidas Performance Power
+                            Tower</a>
+                    </h3>
+                    <button onclick="addToCart(5)">Add to Favourites</button>
+                </div>
+            </div>
+            <div class="cart">
+                <h2>Shopping Cart</h2>
+                <ul id="cartItems"></ul>
+            </div>
+        </main>
+       
     </div>
 
-    <script src="./assets/js/cart.js"></script>
-
-    <!-- 
-    - #FOOTER
-  -->
-
     <footer class="footer" id="footer">
-
         <div class="footer-bottom">
         </div>
-
     </footer>
 
+    <script src="./assets/js/cart.js"></script>
 </body>
 
 </html>
