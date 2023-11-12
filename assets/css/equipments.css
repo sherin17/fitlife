@@ -1170,3 +1170,16 @@ body {
 /* Add any other global styles here */
 
 /* Add specific styles for your header, footer, and other sections as needed */
+
+
+
+.rating {
+	display: flex;
+	margin-bottom:5px;
+  }
+
+  .rating span {
+	font-size: 24px;
+	color: #FFD700; /* Gold color for stars */
+	cursor: pointer;
+  }
