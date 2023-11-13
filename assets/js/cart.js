@@ -49,7 +49,7 @@ function updateCart() {
         const listItem = document.createElement("li");
         listItem.innerHTML = `
             <div class="cart-item">
-                <img src="${item.image}" alt="${item.name}" class="cart-item-image">
+                <img src="${item.image}" alt="${item.name}" class="cart-item-image" width="50px" height="50px">
                 <span>${item.name}</span>
                 <span>Quantity: ${item.count}</span>
                 <span>Total: $${(item.price * item.count).toFixed(2)}</span>

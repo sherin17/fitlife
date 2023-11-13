@@ -110,25 +110,38 @@
     /* Add this style for the search input and button */
     #searchInput {
       padding: 8px;
-      margin-right: 8px;
+      margin-right: 10px;
       border: 1px solid #ccc;
       border-radius: 4px;
       font-size: 16px;
     }
-  
+
     #searchBtn {
-      padding: 8px 12px;
-      background-color: #4CAF50;
+      padding: 6px 10px;
+      background-color: #638064;
       color: white;
       border: none;
       border-radius: 4px;
       cursor: pointer;
-      font-size: 16px;
+      font-size: 12px;
+      text-align: center;
     }
-  
+
     #searchBtn:hover {
       background-color: #45a049;
     }
+    .cards {
+      flex: 0 0 30%;
+      border: 1px solid #ccc;
+      margin: 10px;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    
   </style>
 </head>
 
@@ -155,13 +168,25 @@
         </button>
 
         <ul class="navbar-list">
-
+    
+          <li>
+            <input type="text" id="searchInput" placeholder="Search...">
+          </li>
+          <li>
+            <button id="searchBtn" onclick="searchItems()">
+              <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </li>
           <li>
             <a href="index.html" class="navbar-link active" data-nav-link>Home</a>
           </li>
 
           <li>
-            <a href="cart.html" class="navbar-link" data-nav-link><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg>Cart</a>
+            <a href="cart.html" class="navbar-link" data-nav-link><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                <path
+                  d="M0 24C0 10.7 10.7 0 24 0H69.5c22 0 41.5 12.8 50.6 32h411c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3H170.7l5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5H488c13.3 0 24 10.7 24 24s-10.7 24-24 24H199.7c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5H24C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z" />
+              </svg>Cart</a>
           </li>
           <li>
             <a href="#footer" class="navbar-link" data-nav-link>Contact Us</a>
@@ -181,18 +206,16 @@
   </header>
   <!--Main Body-->
   <section class="section blog" id="blog" aria-label="blog">
-    
+
     <div class="container">
 
       <p class="section-subtitle">Equipments</p>
+      <!-- Add this input and button inside your header -->
+    
 
       <h2 class="h2 section-title text-center">Make your best choice</h2>
 
-         <!-- Add this input and button inside your header -->
-<input type="text" id="searchInput" placeholder="Search...">
-<button id="searchBtn" onclick="searchItems()">
-  <ion-icon name="search-outline" aria-hidden="true"></ion-icon>
-</button>
+
       <div class="card-container">
         <div class="card">
           <img src="./assets/images/005.jpg" loading="lazy" alt="Going to the gym for the first time">
@@ -230,7 +253,7 @@
 
           <time class="card-meta" datetime="2022-07-07">$450</time>
           <h3 class="h3">
-            <a  href="equipment3.html" class="card-title">Slovic Yellow Resistance Bands</a>
+            <a href="equipment3.html" class="card-title">Slovic Yellow Resistance Bands</a>
           </h3>
 
           <p class="card-text">
@@ -249,7 +272,7 @@
 
           <time class="card-meta" datetime="2022-07-07">$780</time>
           <h3 class="h3">
-            <a  href="equipment4.html" class="card-title">Cultsport Adjustable Barbell 20kg</a>
+            <a href="equipment4.html" class="card-title">Cultsport Adjustable Barbell 20kg</a>
           </h3>
 
           <p class="card-text">
@@ -267,7 +290,7 @@
 
           <time class="card-meta" datetime="2022-07-07">$490</time>
           <h3 class="h3">
-            <a  href="equipment5.html" class="card-title">Kore PVC DM-PVC-1KG-COMBO161 FIXED Dumbbell Set, 1Kg</a>
+            <a href="equipment5.html" class="card-title">Kore PVC DM-PVC-1KG-COMBO161 FIXED Dumbbell Set, 1Kg</a>
           </h3>
 
           <p class="card-text">
@@ -285,7 +308,7 @@
 
           <time class="card-meta" datetime="2022-07-07">$1200</time>
           <h3 class="h3">
-            <a  href="equipment6.html" class="card-title">Chest Commerial Adidas Performance Power Tower</a>
+            <a href="equipment6.html" class="card-title">Chest Commerial Adidas Performance Power Tower</a>
           </h3>
 
           <p class="card-text">
