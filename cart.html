@@ -3,109 +3,158 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="author" content="Kamran Mubarik">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/equipments.css" />
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/cart.css">
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <link rel="stylesheet" href="fancybox/source/jquery.fancybox.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js"></script>
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-buttons.js"></script>
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-media.js"></script>
-    <link rel="stylesheet" href="fancybox/source/helpers/jquery.fancybox-thumbs.css" type="text/css" media="screen" />
-    <script type="text/javascript" src="fancybox/source/helpers/jquery.fancybox-thumbs.js"></script>
+    <title>ECommerce-ShoppingCart | Korsat X Parmaga</title>
+
+    <!-- box icons  -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- styles  -->
+    <link rel="stylesheet" href="assets/css/cart.css">
 </head>
 
 <body>
-
+    <!-- HEADER  -->
     <header>
-    </header>
+        <!-- NAV  -->
+        <div class="nav container">
+            <a href="#" class="logo"><span>Get-Fit</span></a>
+            <a href="index.html" class="logo">Home</a>
+            <!-- CART ICON  -->
 
-    <div class="container">
-        <main>
-            <div class="breadcrumb">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li> / </li>
-                    <li><a href="Shopping.html">Shop</a></li>
-                    <li> / </li>
-                    <li><a href="#">Cart</a></li>
-                </ul>
-            </div>
-            <div class="card-container">
-                <div class="card">
-                    <img src="./assets/images/005.jpg" loading="lazy" alt="Going to the gym for the first time">
-                    <time class="card-meta" datetime="2022-07-07">$600</time>
-                    <h3 class="h3">
-                        <a href="equipment1.html" class="card-title">Threadmill</a>
-                    </h3>
-                    <button onclick="addToCart(0)">Add to Cart</button>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/006.jpg" width="440" height="270" loading="lazy"
-                        alt="Parturient accumsan cacus pulvinar magna" class="img-cover">
-                    <time class="card-meta" datetime="2022-07-07">$500</time>
-                    <h3 class="h3">
-                        <a href="equipment2.html" class="card-title"> Cultsport smartRow cabo, Max
-                            Weight:110kg</a>
-                    </h3>
-                    <button onclick="addToCart(1)">Add to Cart</button>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/007.jpg" width="440" height="270" loading="lazy"
-                        alt="Risus purus namien parturient accumsan cacus" class="img-cover">
-                    <time class="card-meta" datetime="2022-07-07">$450</time>
-                    <h3 class="h3">
-                        <a href="equipment3.html" class="card-title">Slovic Yellow Resistance Bands</a>
-                    </h3>
-                    <button onclick="addToCart(2)">Add to Cart</button>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/008.jpg" width="440" height="270" loading="lazy"
-                        alt="Risus purus namien parturient accumsan cacus" class="img-cover">
-                    <time class="card-meta" datetime="2022-07-07">$780</time>
-                    <h3 class="h3">
-                        <a href="equipment4.html" class="card-title">Cultsport Adjustable Barbell 20kg</a>
-                    </h3>
-                    <button onclick="addToCart(3)">Add to Cart</button>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/009.jpg" width="440" height="270" loading="lazy"
-                        alt="Risus purus namien parturient accumsan cacus" class="img-cover">
-                    <time class="card-meta" datetime="2022-07-07">$490</time>
-                    <h3 class="h3">
-                        <a href="equipment5.html" class="card-title">Kore PVC DM-PVC-1KG-COMBO161 FIXED Dumbbell
-                            Set, 1Kg</a>
-                    </h3>
-                    <button onclick="addToCart(4)">Add to Cart</button>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/010.jpg" width="440" height="270" loading="lazy"
-                        alt="Risus purus namien parturient accumsan cacus" class="img-cover">
-                    <time class="card-meta" datetime="2022-07-07">$1200</time>
-                    <h3 class="h3">
-                        <a href="equipment6.html" class="card-title">Chest Commerial Adidas Performance Power
-                            Tower</a>
-                    </h3>
-                    <button onclick="addToCart(5)">Add to Cart</button>
-                </div>
-            </div>
+            <i class='bx bx-shopping-bag' id="cart-icon"></i>
+
+            <!-- CART  -->
             <div class="cart">
-                <h2>Shopping Cart</h2>
-                <ul id="cartItems"></ul>
+                <h2 class="cart-title">Your Cart</h2>
+
+                <!-- CONTENT  -->
+                <div class="cart-content">
+
+
+                </div>
+
+                <!-- TOTAL   -->
+                <div class="total">
+                    <div class="total-title">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                <!-- BUY BUTTON  -->
+                <button type="button" class="btn-buy"><a href="reservationform.html">Reserve</a></button>
+                <!-- CART CLOSE  -->
+                <i class='bx bx-x' id="cart-close"></i>
             </div>
-        </main>
-       
-    </div>
-
-    <footer class="footer" id="footer">
-        <div class="footer-bottom">
         </div>
-    </footer>
+    </header>
+    <!-- SHOP SECTION  -->
+    <section class="search-box">
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button id="searchBtn" onclick="searchItems()">
+        </div>
+    </section>
 
-    <script src="./assets/js/cart.js"></script>
+    <section class="shop container">
+        <h2 class="section-title">Shop Products</h2>
+
+        <!-- CONTENT  -->
+        <div class="shop-content">
+            <!-- BOX 1 -->
+            <div class="product-box">
+                <img src="./assets/images/006.jpg" alt="" class="product-img">
+                <h2 class="product-title">Cultsport smartRow cabo, Max
+                    Weight:110kg</h2>
+                <span class="product-price">$500</span>
+                <p class="description" style="display: none;">Maximum supported weight - 110 kg Steel frame with level 100 electromagnetic
+                    resistance with transportation wheels and tablet holder.
+                </p>
+                <i class='bx bx-detail view-details' onclick="showDetails(this)">View Details</i>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 2 -->
+            <div class="product-box">
+                <img src="./assets/images/005.jpg" alt="" class="product-img">
+                <h2 class="product-title">Threadmill</h2>
+                <span class="product-price">$600</span>
+                <p class="description" style="display: none;">A treadmill is a device generally used for walking, running, or climbing while
+                    staying in the same place. Treadmills were introduced before the development of powered machines to
+                    harness the power of animals or humans
+                    to do work, often a type of mill operated by a person or animal treading the steps of a treadwheel
+                    to grind grain.
+                </p>
+                <i class='bx bx-detail view-details' onclick="showDetails(this)">View Details</i>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 3 -->
+            <div class="product-box">
+                <img src="./assets/images/007.jpg" alt="" class="product-img">
+                <h2 class="product-title">Slovic Yellow Resistance Bands</h2>
+                <span class="product-price">$450</span>
+                <p class="description" style="display: none;">
+                    UNBREAKABLE RESISTANCE BAND with 1 YEAR WARRANTY: Made From 100% Latex and Available in 5 Levels of
+                    Resistance Strength The Slovic Rubber Bands in the X-light, Light, Medium, Heavy, and X-heavy sizes
+                    are
+                    incredibly simple to use for both beginners and experts. Anyone Can Workout With This Heavy
+                    Resistance Tube
+                </p>
+                <i class='bx bx-detail view-details' onclick="showDetails(this)">View Details</i>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 4 -->
+            <div class="product-box">
+                <img src="./assets/images/008.jpg" alt="" class="product-img">
+                <h2 class="product-title">Kore PVC DM-PVC-1KG-COMBO161 FIXED Dumbbell
+                    Set, 1Kg</h2>
+                <span class="product-price">$780</span>
+                <p class="description" style="display: none;">
+                    14 kg of PVC weight (2.5 kg x 4 = 10 kg + 1 kg x 4 = 4 kg)
+                    2 x 14 inch dumbbell rods with nuts
+                    Each dumbbell rod can accommodate maximum of two rubber weight plates on either side . Possible
+                    combinations can be made accordingly.
+                    A combination of gym equipment for the perfect workout
+                </p>
+                <i class='bx bx-detail view-details' onclick="showDetails(this)">View Details</i>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 5 -->
+            <div class="product-box">
+                <img src="./assets/images/010.jpg" alt="" class="product-img">
+                <h2 class="product-title">Chest Commerial Adidas Performance Power
+                    Tower, Max
+                    Weight:110kg </h2>
+                <span class="product-price">$1200</span>
+                <p class="description" style="display: none;">
+                    Designed for bodyweight training, the Performance Power Tower helps develop the chest, back, arms
+                    and abs with simple compound movements.
+                    Built with a solid steel frame and dense foam padding, the Power Tower features rubberised non-slip
+                    feet to aid stability.
+                </p>
+                <i class='bx bx-detail view-details' onclick="showDetails(this)">View Details</i>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+            <!-- BOX 6 -->
+            <div class="product-box">
+                <img src="./assets/images/009.jpg" alt="" class="product-img">
+                <h2 class="product-title">Kore PVC DM-PVC-1KG-COMBO161 FIXED Dumbbell
+                    Set, 1Kg</h2>
+                <span class="product-price">$100</span>
+                <p class="description" style="display: none;">
+                    Product 1: 1 kg x 2 PVC dumbbells
+                    Product 1: A combination of gym equipment for the perfect workout
+                    Product 1: Highly durable and long lasting
+                    Product 1: A perfect muscle builder
+                    Product 2: This lightweight gym bag will stylishly carry your workout clothes and other essentials
+                    from your home to gym sport
+                </p>
+                <i class='bx bx-detail view-details' onclick="showDetails(this)">View Details</i>
+                <i class='bx bx-shopping-bag add-cart'></i>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- link js  -->
+    <script src="assets/js/cart.js"></script>
 </body>
 
 </html>

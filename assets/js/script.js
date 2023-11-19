@@ -53,23 +53,3 @@ window.addEventListener("scroll", function () {
   }
 });
 
-function searchItems() {
-  // Get the search query from the input field
-  const searchQuery = document.getElementById('searchInput').value.toLowerCase();
-
-  // Get all the cards
-  const cards = document.querySelectorAll('.card');
-
-  // Loop through each card to check if it contains the search query
-  cards.forEach(card => {
-    const cardTitle = card.querySelector('.card-title').innerText.toLowerCase();
-    const cardText = card.querySelector('.card-text').innerText.toLowerCase();
-
-    // If the card contains the search query, display it; otherwise, hide it
-    if (cardTitle.includes(searchQuery) || cardText.includes(searchQuery)) {
-      card.style.display = 'block';
-    } else {
-      card.style.display = 'none';
-    }
-  });
-}
