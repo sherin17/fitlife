@@ -189,8 +189,7 @@ function showDetails(button) {
   let title = productBox.querySelector(".product-title").innerHTML;
   let price = productBox.querySelector(".product-price").innerHTML;
   let imgSrc = productBox.querySelector(".product-img").src;
-  let productId = productBox.getAttribute("data-product-id");
-  // Add any other details you want to display
+  let description = productBox.querySelector(".description").innerHTML;
 
   // Create a modal container
   let modalContainer = document.createElement("div");
@@ -203,6 +202,7 @@ function showDetails(button) {
       <h2>${title}</h2>
       <img src="${imgSrc}" alt="${title}" class="modal-img">
       <p>Price: ${price}</p>
+      <p>Description: ${description}</p>
       <!-- Add other details as needed -->
   `;
 
